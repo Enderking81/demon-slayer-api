@@ -48,23 +48,6 @@ curl http://localhost:3000/api/characters/1
 curl -X POST http://localhost:3000/api/characters -H "Content-Type: application/json" -d '{
   "name": "Tanjiro Kamado",
   "role": "Protagonist",
-  "weapon": "Nichirin Sword",
-  "skills": ["Water Breathing", "Hinokami Kagura"]
-}'
-```
-
-### Actualizar un Personaje por ID
-
-**Método:** `PUT`  
-**Ruta:** `/api/characters/:id`  
-**Cuerpo:** JSON con los campos a actualizar.
-
-#### Ejemplo de Uso
-
-```bash
-curl -X PUT http://localhost:3000/api/characters/1 -H "Content-Type: application/json" -d '{
-  "weapon": "New Nichirin Sword",
-  "skills": ["New Skill"]
 }'
 ```
 
@@ -89,15 +72,12 @@ curl -X DELETE http://localhost:3000/api/characters/1
     "id": 1,
     "name": "Tanjiro Kamado",
     "role": "Protagonist",
-    "weapon": "Nichirin Sword",
-    "skills": ["Water Breathing", "Hinokami Kagura"]
   },
   {
     "id": 2,
     "name": "Nezuko Kamado",
     "role": "Supporting",
-    "weapon": "None",
-    "skills": ["Blood Demon Art"]
+
   }
 ]
 ```
@@ -109,8 +89,6 @@ curl -X DELETE http://localhost:3000/api/characters/1
   "id": 3,
   "name": "Inosuke Hashibira",
   "role": "Supporting",
-  "weapon": "Dual Nichirin Swords",
-  "skills": ["Beast Breathing"]
 }
 ```
 
